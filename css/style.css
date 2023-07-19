@@ -1,0 +1,110 @@
+.bg-color {
+  background-color: #f7ecde;
+}
+
+.fontfamily {
+  font-family: 'Dancing Script', cursive;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.border {
+  border-bottom: 2px dotted #000 !important;
+}
+
+.titles {
+  display: inline;
+  position: relative;
+  z-index: 2;
+}
+
+.titles::after {
+  content: '';
+  width: 100%;
+  height: 30%;
+  background-color: #fec16081;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.titles:hover::after {
+  height: 70%;
+}
+
+.btn-mange {
+  background: none;
+  border: 0;
+  font-family: 'Belanosima',
+    sans-serif;
+}
+
+
+.title h4 {
+  display: inline-block;
+  padding: 32px;
+  font-family: 'Belanosima',
+    sans-serif;
+  background: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title h4::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f02e";
+  width: 20px;
+  height: 27px;
+  background: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.title h4::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f02e";
+  width: 20px;
+  height: 27px;
+  background: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.viste-btn::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f06e";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.delet-btn::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f2ed";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}

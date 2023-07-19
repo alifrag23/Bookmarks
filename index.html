@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./bookmark.png" type="image/x-icon">
+  <title>Bookmark</title>
+  <!-- =========google-fonts ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Dancing+Script:wght@700&display=swap"
+    rel="stylesheet">
+  <!-- ========== Font Awesome -css ========== -->
+  <link rel="stylesheet" href="./css/all.min.css">
+
+  <!-- ========== bootstrab-css ========== -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- =========main-css ========== -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <main class=" bg-color">
+    <section class="container">
+      <div class="title d-flex align-items-center justify-content-center flex-column">
+        <h1 class="text-center fontfamily titles mt-3 ">Bookmarker</h1>
+        <!-- <div class="border-0 border ">ss</div> -->
+        <h4 class="text-center position-relative py-5">Bookmark your favorite sites</h4>
+      </div>
+
+
+
+      <div class="inputs p-3">
+        <div>
+          <i class="fa-solid fa-book-bookmark"></i>
+          <label for="BookmarkName">Site Name</label>
+        </div> <input type="text" class="my-1 form-control" placeholder="Bookmark Name" id="BookmarkName">
+      </div>
+
+
+
+      <div class="inputs p-3">
+        <div>
+          <i class="fa-solid fa-link"></i>
+          <label for="siteUrl">Site URL</label>
+        </div>
+        <input type="url" class="my-1 form-control" placeholder="Bookmark Name" id="siteUrl">
+      </div>
+      <button class="btn btn-danger d-block m-auto px-4 " onclick="submit()">Submit </button>
+
+
+      <table class="table text-center mt-5 table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Website Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- ========== bootstrab-css ========== -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- ========= main-js========== -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
